@@ -28,13 +28,6 @@ class Club():
         # your code goes here!
         tot_age = 0
         for m in self.members:
-            # print("""
-            # - {} ({} years old) - {}
-            # """).format(m.name, m.age, m.bio)
-            print("==DEBUG==")
-            print("m.presn", self.president.name)
-            print("==DEBUG==")
-
             presn = ", President" if self.president.name == m.name else ""
             print(" - %s (%s years old%s) - %s" % (m.name, m.age, presn, m.bio))
             tot_age += m.age
